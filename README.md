@@ -21,6 +21,33 @@ youtube-dl --write-auto-sub --sub-lang en --skip-download -o 'video.%(ext)s' htt
 # Convert them to SubRip Subtitles format
 ffmpeg -loglevel quiet -i video.en.vtt video.en.srt
 
-# Get sorted list with all words pronounced in this video
-./srtwl.sh video.en.srt > video_words.txt
+# Print sorted list with all words pronounced in this video
+./srtwl.sh video.en.srt
+```
+
+Output:
+
+```
+...
+amazingly
+among
+amount
+an
+and
+android
+andy
+annette
+another
+answer
+any
+anymore
+anything
+anyway
+apparently
+appears
+append
+appended
+appending
+appends
+...
 ```
